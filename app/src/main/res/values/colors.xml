@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blood_pressed">#C62828</color>
+    <color name="blood_normal">#EF5350</color>
+    <color name="chiness_pressed">#3E2723</color>
+    <color name="chiness_normal">#795548</color>
+    <color name="quize_pressed">#004D40</color>
+    <color name="quize_normal">#00695C</color>
+    <color name="colorPrimary">#d25a5a</color>
+    <color name="colorPrimaryDark">#bf3838</color>
+    <color name="colorAccent">#403c3d</color>
+    <color name="china_pressed">#00ffba</color>
+
+    <color name="green_temp">#23A96E</color>
+    <color name="green_dark">#159204</color>
+    <color name="bright_green">#02D8B0</color>
+    <color name="button_green">#10a54a</color>
+
+    <color name="chiness_button">#72C0DD</color>
+    <color name="chiness_button_pressed">#2D8AAD</color>
+    <color name="blood_button">#F98B98</color>
+    <color name="blood_button_pressed">#D15967</color>
+
+    <color name="azul">#F98B98</color>
+    <color name="azulEscuro">#D15967</color>
+
+    <color name="black">#403b3737</color>
+
+    <style name="Widget.Button" parent="android:Widget">
+        <item name="android:background">@drawable/red_dot</item>
+    </style>
+    <color name="colorPinkDeep">#b71c1c</color>
+    <color name="colorPinkSoft">#e55350</color>
+    <color name="colorBlueDeep">#039BE5</color>
+    <color name="colorBlueSoft">#81D4FA</color>
+    <color name="colorBackgroundBlood">#55e55350</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

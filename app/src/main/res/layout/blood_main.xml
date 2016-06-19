@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hd"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+
+        <ProgressBar
+
+            android:id="@+id/progressBarBlood"
+            android:visibility="gone"
+           android:layout_gravity="center"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="0dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:layout_marginTop="80dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <LinearLayout
+        android:id="@+id/bloodLinear"
+        android:visibility="visible"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/quiz_question"
+        android:orientation="vertical"
+        >
+       <!-- <LinearLayout
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">-->
+        <LinearLayout
+
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center">
+            <EditText
+                android:id="@+id/mothrBlood"
+                style="@style/Widget.AppCompat.EditText"
+                android:background="#fff"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:inputType="number"
+                android:layout_centerVertical="true"
+                android:hint=" Enter mom age at conception"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#8c8181"
+                android:textColorHint="#8b7e7e" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16-60"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center">
+            <EditText
+                android:id="@+id/dadBlood"
+                android:inputType="number"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="#fff"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Enter dad age at conception"
+                android:textColor="#8c8181"
+                android:textColorHint="#8b7e7e" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16-70"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/bloodCalculate"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:background="@drawable/blood_calculate"
+                android:text="Calculate"
+                android:textColor="@android:color/black"/>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<!--</LinearLayout>-->
