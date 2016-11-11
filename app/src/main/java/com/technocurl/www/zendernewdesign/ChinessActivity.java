@@ -1,6 +1,5 @@
 package com.technocurl.www.zendernewdesign;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,6 +13,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -35,6 +35,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+
+import com.technocurl.www.zendernewdesign.blood.BloodActivity;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -197,10 +199,10 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
 
         }
     }
-    /*public void takeData() {
+    public void takeData() {
         int minimum = Integer.parseInt(mothrAge.getText().toString());
-        String dateconceptionn=textView.getText().toString();
-        if ((minimum >= 18 && minimum <= 45) && (dateconceptionn.equals("January")||dateconceptionn.equals("February")||dateconceptionn.equals("March")||dateconceptionn.equals("April")||dateconceptionn.equals("May")||dateconceptionn.equals("June")||dateconceptionn.equals("July")||dateconceptionn.equals("August")||dateconceptionn.equals("September")||dateconceptionn.equals("October")||dateconceptionn.equals("November")||dateconceptionn.equals("December") ) ) {
+        String dateconceptionn = textView.getText().toString();
+        if ((minimum >= 18 && minimum <= 45) && (dateconceptionn.equals("January") || dateconceptionn.equals("February") || dateconceptionn.equals("March") || dateconceptionn.equals("April") || dateconceptionn.equals("May") || dateconceptionn.equals("June") || dateconceptionn.equals("July") || dateconceptionn.equals("August") || dateconceptionn.equals("September") || dateconceptionn.equals("October") || dateconceptionn.equals("November") || dateconceptionn.equals("December"))) {
 
             String mother = mothrAge.getText().toString();
 
@@ -208,19 +210,19 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
 
             if (mother.equals("18")) {
                 if ((chick.equals("January") || chick.equals("March"))) {
-                   showGirl();
+                    showGirl();
                 } else {
-                   showBoy();
+                    showBoy();
                 }
             } else if (mother.equals("19")) {
                 if ((chick.equals("February") || chick.equals("April") || chick.equals("May") || chick.equals("November") || chick.equals("December"))) {
-                   showGirl();
+                    showGirl();
                 } else {
-                   showBoy();
+                    showBoy();
                 }
             } else if (mother.equals("20")) {
                 if ((chick.equals("January")) || chick.equals("March") || chick.equals("October")) {
-                   showGirl();
+                    showGirl();
                 } else {
                     showBoy();
                 }
@@ -235,11 +237,11 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
                 if ((chick.equals("January")) || chick.equals("April") || chick.equals("June") || chick.equals("july") || chick.equals("September") || chick.equals("October") || chick.equals("November") || chick.equals("December")) {
                     showGirl();
                 } else {
-                   showBoy();
+                    showBoy();
                 }
             } else if (mother.equals("23")) {
                 if ((chick.equals("March")) || chick.equals("June") || chick.equals("August") || chick.equals("December")) {
-                  showGirl();
+                    showGirl();
 
                 } else {
                     showBoy();
@@ -329,7 +331,7 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
                     showBoy();
                 }
 
-                } else if (mother.equals("37")) {
+            } else if (mother.equals("37")) {
                 if (chick.equals("February") || chick.equals("May") || chick.equals("June") || chick.equals("July") || chick.equals("September") || chick.equals("November")) {
                     showGirl();
                 } else {
@@ -371,46 +373,54 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
                     showGirl();
                 } else {
                     showBoy();
-                }*/
+                }
 
-/*
-                (dateconceptionn.equals("January")){
+                if (dateconceptionn.equals("January")) {
                     dateconception = 1;
-                }else if(dateconceptionn.equals("February")){
-                    dateconception=2;
-                }else if (dateconceptionn.equals("March")){
-                    dateconception=3;
-                }else if (dateconceptionn.equals("April")){
-                    dateconception=4;
-                }else if (dateconceptionn.equals("May")){
-                    dateconception=5;
-                }else if (dateconceptionn.equals("June")){
-                    dateconception=6;
-                }else if(dateconceptionn.equals("July")){
-                    dateconception=7;
-                }else if (dateconceptionn.equals("August")){
-                    dateconception=8;
-                }else if (dateconceptionn.equals("September")){
-                    dateconception=9;
-                }else if (dateconceptionn.equals("October")){
-                    dateconception=10;
-                }else if(dateconceptionn.equals("November")){
-                    dateconception=11;
-                }else if (dateconceptionn.equals("December")){
-                    dateconception=12;
+                } else if (dateconceptionn.equals("February")) {
+                    dateconception = 2;
+                } else if (dateconceptionn.equals("March")) {
+                    dateconception = 3;
+                } else if (dateconceptionn.equals("April")) {
+                    dateconception = 4;
+                } else if (dateconceptionn.equals("May")) {
+                    dateconception = 5;
+                } else if (dateconceptionn.equals("June")) {
+                    dateconception = 6;
+                } else if (dateconceptionn.equals("July")) {
+                    dateconception = 7;
+                } else if (dateconceptionn.equals("August")) {
+                    dateconception = 8;
+                } else if (dateconceptionn.equals("September")) {
+                    dateconception = 9;
+                } else if (dateconceptionn.equals("October")) {
+                    dateconception = 10;
+                } else if (dateconceptionn.equals("November")) {
+                    dateconception = 11;
+                } else if (dateconceptionn.equals("December")) {
+                    dateconception = 12;
 
-            } else if (mother.equals("44")) {
-                if (chick.equals("March") || chick.equals("July") || chick.equals("September") || chick.equals("November") || chick.equals("December")) {
-                    showGirl();
+                } else if (mother.equals("44")) {
+                    if (chick.equals("March") || chick.equals("July") || chick.equals("September") || chick.equals("November") || chick.equals("December")) {
+                        showGirl();
+                    } else {
+                        showBoy();
+                    }
+                } else if (mother.equals("45")) {
+                    if (chick.equals("January") || chick.equals("April") || chick.equals("May") || chick.equals("June") || chick.equals("August") || chick.equals("October")) {
+                        showGirl();
+                    } else {
+                        showBoy();
+                    }
                 } else {
-                    showBoy();
+                    Snackbar snackbar = Snackbar.make(ll, "Please enter  valid input ", Snackbar.LENGTH_LONG);
+                    View snackBarView = snackbar.getView();
+                    snackBarView.setBackgroundColor(getResources().getColor(R.color.blood_button_pressed));
+                    snackbar.setActionTextColor(getResources().getColor(R.color.chiness_button_pressed));
+                    snackbar.show();
                 }
-            } else if (mother.equals("45")) {
-                if (chick.equals("January") || chick.equals("April") || chick.equals("May") || chick.equals("June") || chick.equals("August") || chick.equals("October")) {
-                    showGirl();
-                } else {
-                    showBoy();
-                }
+
+
             } else {
                 Snackbar snackbar = Snackbar.make(ll, "Please enter  valid input ", Snackbar.LENGTH_LONG);
                 View snackBarView = snackbar.getView();
@@ -418,17 +428,8 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
                 snackbar.setActionTextColor(getResources().getColor(R.color.chiness_button_pressed));
                 snackbar.show();
             }
-
-
-        }else {
-            Snackbar snackbar = Snackbar.make(ll, "Please enter  valid input ", Snackbar.LENGTH_LONG);
-            View snackBarView = snackbar.getView();
-            snackBarView.setBackgroundColor(getResources().getColor(R.color.blood_button_pressed));
-            snackbar.setActionTextColor(getResources().getColor(R.color.chiness_button_pressed));
-            snackbar.show();
         }
     }
-*/
 
     public void dosomething() {
 
@@ -490,12 +491,12 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent i = new Intent(ChinessActivity.this, MainActivity.class);
+       /* Intent i = new Intent(ChinessActivity.this, MainActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(i);
-        finish();
+        finish();*/
     }
-   /* public void showBoy(){
+    public void showBoy(){
 
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -503,7 +504,7 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
             builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
                 @Override
                 public void onDismiss(DialogInterface dialog) {
-                    Intent intent =new Intent (ChinessActivity.this,BloodActivity.class);
+                    Intent intent =new Intent(ChinessActivity.this,BloodActivity.class);
                     startActivity(intent);
                 }
             });
@@ -532,7 +533,7 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
     public void showGirl(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-            builder*//*.setPositiveButton("Check Again", new DialogInterface.OnClickListener() {
+            builder.setPositiveButton("Check Again", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                         }
@@ -540,7 +541,7 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                         }
-                    })*//*.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    }).setOnDismissListener(new DialogInterface.OnDismissListener() {
                 @Override
                 public void onDismiss(DialogInterface dialog) {
                     Intent intent =new Intent (ChinessActivity.this,ChinessActivity.class);
@@ -563,5 +564,5 @@ public class ChinessActivity extends AppCompatActivity implements  OnItemClickLi
 //                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         dialog.show();
-    }*/
+    }
     }

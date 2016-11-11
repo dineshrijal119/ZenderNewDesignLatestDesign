@@ -1,24 +1,24 @@
 package com.technocurl.www.zendernewdesign;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.Toast;
+import android.widget.LinearLayout;
 
+import com.technocurl.www.zendernewdesign.blood.BloodActivity;
 import com.technocurl.www.zendernewdesign.quize.QuizeActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private FrameLayout chiness,blood,quiz;
+    private LinearLayout chiness,blood,quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        chiness=(FrameLayout) findViewById(R.id.chiness_main);
-        blood=(FrameLayout) findViewById(R.id.blood_main);
-        quiz=(FrameLayout) findViewById(R.id.play_quiz);
+        chiness=(LinearLayout) findViewById(R.id.chiness_main);
+        blood=(LinearLayout) findViewById(R.id.blood_main);
+        quiz=(LinearLayout) findViewById(R.id.play_quiz);
         chiness.setOnClickListener(this);
         blood.setOnClickListener(this);
         quiz.setOnClickListener(this);

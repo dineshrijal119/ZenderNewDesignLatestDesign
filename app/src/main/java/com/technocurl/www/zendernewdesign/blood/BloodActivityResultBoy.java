@@ -1,12 +1,13 @@
-package com.technocurl.www.zendernewdesign;
+package com.technocurl.www.zendernewdesign.blood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import com.technocurl.www.zendernewdesign.R;
 
 /**
  * Created by root on 5/27/16.

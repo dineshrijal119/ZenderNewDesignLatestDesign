@@ -3,14 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusable="true"
-    android:background="@drawable/fuck_up_mc"
+    android:background="#a65c5c"
     android:id="@+id/chinessMain"
     android:focusableInTouchMode="true"
     android:orientation="vertical">
 
     <!---->
     <ProgressBar
-
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
@@ -23,8 +22,7 @@
         android:indeterminate="false"
         android:max="100"
         android:progressDrawable="@drawable/chiness_progress"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
     <LinearLayout
         android:id="@+id/linearLayoutchiness"

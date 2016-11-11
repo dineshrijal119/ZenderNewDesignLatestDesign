@@ -6,8 +6,8 @@
     <color name="chiness_normal">#795548</color>
     <color name="quize_pressed">#004D40</color>
     <color name="quize_normal">#00695C</color>
-    <color name="colorPrimary">#d25a5a</color>
-    <color name="colorPrimaryDark">#bf3838</color>
+    <color name="colorPrimary">#d76262</color>
+    <color name="colorPrimaryDark">#934141</color>
     <color name="colorAccent">#403c3d</color>
     <color name="china_pressed">#00ffba</color>
 
@@ -53,6 +53,7 @@
     <color name="dot_light_screen2">#8cf9eb</color>
     <color name="dot_light_screen3">#93c6fd</color>
     <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="white">#ffff</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>

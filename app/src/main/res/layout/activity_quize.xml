@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/result_girl_bg"
+    android:background="#895f5f"
     tools:context=".quize.QuizeActivity"
     android:layout_gravity="center"
     android:gravity="center">
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:background="@drawable/quiz_question"
             android:layout_height="140dp">
-        <TextView
+        <com.technocurl.www.zendernewdesign.custum_fonts.FontTextViewbold
             android:id="@+id/textView1"
             android:layout_gravity="center"
             android:gravity="center"

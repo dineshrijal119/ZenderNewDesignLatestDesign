@@ -4,84 +4,126 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="3"
     tools:context="com.technocurl.www.zendernewdesign.MainActivity">
+
+    <LinearLayout
+        android:background="#ef9a9a"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <com.technocurl.www.zendernewdesign.custum_fonts.FontTextViewbold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="Are you pregnant?"/>
+        <com.technocurl.www.zendernewdesign.custum_fonts.FontTextViewbold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:text="predict your unborn baby's gender.."/>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/baby_fit">
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_weight="2"
+        android:weightSum="2"
         android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="220dp">
-            <FrameLayout
-                android:id="@+id/chiness_main"
-                android:background="@drawable/chiness_background"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white"
-                    android:text="Chiness Method"/>
-            </FrameLayout>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/blood_background"
-            android:layout_height="220dp"
-            android:layout_gravity="center"
-            android:gravity="center">
-            <FrameLayout
-                android:id="@+id/blood_main"
-                android:background="@drawable/blood_background"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white"
-                    android:text="Blood Method"/>
-            </FrameLayout>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center">
-        <FrameLayout
-            android:id="@+id/play_quiz"
-            android:background="@drawable/quize_background"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/chiness_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#B388FF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_all_inclusive_white_48dp" />
+
+                <com.technocurl.www.zendernewdesign.custum_fonts.FontTextViewbold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Chinese  Method"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blood_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#d76262"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_invert_colors_white_48dp" />
+
+                <com.technocurl.www.zendernewdesign.custum_fonts.FontTextViewbold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="By Blood"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ec4d82"
+            android:id="@+id/play_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:src="@drawable/ic_question_answer_black_48dp"
+                android:tint="@color/white" />
+
+            <com.technocurl.www.zendernewdesign.custum_fonts.FontTextViewbold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Play Quiz"
                 android:textColor="@android:color/white"
-                android:text="Play Quiz"/>
-        </FrameLayout>
-    </LinearLayout>
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

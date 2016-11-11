@@ -8,14 +8,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppThemeWelcome">
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:theme="@style/AppTheme"></activity>
         <activity
             android:theme="@style/AppThemeQuize"
             android:name=".quize.QuizeActivity" />
@@ -24,9 +23,9 @@
             android:name=".quize.ResultActivity"></activity>
 
         <activity android:name=".ChinessActivity" android:theme="@style/AppThemeChiness"/>
-        <activity android:name=".BloodActivity" android:theme="@style/AppThemeBlood"></activity>
-        <activity android:name=".BloodActivityResultBoy" android:theme="@style/AppThemeBlood"></activity>
-        <activity android:name=".BloodActivityResultGirl" android:theme="@style/AppThemeBlood"></activity>
+        <activity android:name=".blood.BloodActivity" android:theme="@style/AppThemeBlood"></activity>
+        <activity android:name=".blood.BloodActivityResultBoy" android:theme="@style/AppThemeBlood"></activity>
+        <activity android:name=".blood.BloodActivityResultGirl" android:theme="@style/AppThemeBlood"></activity>
     </application>
 
 </manifest>
